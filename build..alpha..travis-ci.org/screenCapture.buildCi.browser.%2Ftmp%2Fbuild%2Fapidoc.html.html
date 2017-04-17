@@ -1,0 +1,791 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/Raynos/send-data">send-data (v8.0.0)</a>
+</h1>
+<h4>send data through response</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.send-data">module send-data</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.send-data.send-data">
+            function <span class="apidocSignatureSpan"></span>send-data
+            <span class="apidocSignatureSpan">(req, res, opts, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.send-data.css">
+            function <span class="apidocSignatureSpan">send-data.</span>css
+            <span class="apidocSignatureSpan">(req, res, opts, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.send-data.error">
+            function <span class="apidocSignatureSpan">send-data.</span>error
+            <span class="apidocSignatureSpan">(req, res, opts, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.send-data.html">
+            function <span class="apidocSignatureSpan">send-data.</span>html
+            <span class="apidocSignatureSpan">(req, res, opts, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.send-data.is_send_object">
+            function <span class="apidocSignatureSpan">send-data.</span>is_send_object
+            <span class="apidocSignatureSpan">(object)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.send-data.javascript">
+            function <span class="apidocSignatureSpan">send-data.</span>javascript
+            <span class="apidocSignatureSpan">(req, res, opts, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.send-data.json">
+            function <span class="apidocSignatureSpan">send-data.</span>json
+            <span class="apidocSignatureSpan">(req, res, opts, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.send-data.plain">
+            function <span class="apidocSignatureSpan">send-data.</span>plain
+            <span class="apidocSignatureSpan">(req, res, opts, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.send-data.toString">
+            function <span class="apidocSignatureSpan">send-data.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.send-data.css">module send-data.css</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.send-data.css.css">
+            function <span class="apidocSignatureSpan">send-data.</span>css
+            <span class="apidocSignatureSpan">(req, res, opts, callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.send-data.error">module send-data.error</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.send-data.error.error">
+            function <span class="apidocSignatureSpan">send-data.</span>error
+            <span class="apidocSignatureSpan">(req, res, opts, callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.send-data.html">module send-data.html</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.send-data.html.html">
+            function <span class="apidocSignatureSpan">send-data.</span>html
+            <span class="apidocSignatureSpan">(req, res, opts, callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.send-data.is_send_object">module send-data.is_send_object</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.send-data.is_send_object.is_send_object">
+            function <span class="apidocSignatureSpan">send-data.</span>is_send_object
+            <span class="apidocSignatureSpan">(object)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.send-data.javascript">module send-data.javascript</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.send-data.javascript.javascript">
+            function <span class="apidocSignatureSpan">send-data.</span>javascript
+            <span class="apidocSignatureSpan">(req, res, opts, callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.send-data.json">module send-data.json</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.send-data.json.json">
+            function <span class="apidocSignatureSpan">send-data.</span>json
+            <span class="apidocSignatureSpan">(req, res, opts, callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.send-data.plain">module send-data.plain</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.send-data.plain.plain">
+            function <span class="apidocSignatureSpan">send-data.</span>plain
+            <span class="apidocSignatureSpan">(req, res, opts, callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.send-data.toString">module send-data.toString</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.send-data.toString.toString">
+            function <span class="apidocSignatureSpan">send-data.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.send-data" id="apidoc.module.send-data">module send-data</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.send-data.send-data" id="apidoc.element.send-data.send-data">
+        function <span class="apidocSignatureSpan"></span>send-data
+        <span class="apidocSignatureSpan">(req, res, opts, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function send(req, res, opts, callback) {
+    var headers = opts.headers || {}
+    var statusCode = opts.statusCode || null
+    var body = typeof opts === 'object' ? opts.body : opts
+    var gzip = opts.gzip || false
+
+    body = Buffer.isBuffer(body) ? body : new Buffer(body || '')
+    headers = headers || {}
+
+    res.statusCode = statusCode || res.statusCode
+
+    Object.keys(headers).forEach(function (header) {
+        res.setHeader(header, headers[header])
+    })
+
+    if (gzip &amp;&amp; acceptsGzip(req)) {
+        if (!callback) {
+            throw new Error(CALLBACK_REQUIRED)
+        }
+
+        zlib.gzip(body, function (err, body) {
+            if (err) {
+                return callback(err)
+            }
+
+            res.once('finish', callback)
+
+            res.setHeader('content-encoding', 'gzip')
+            res.setHeader('content-length', body.length)
+            res.end(body)
+        })
+    } else {
+        if (callback) {
+            res.once('finish', callback)
+        }
+
+        res.setHeader('content-length', body.length)
+        res.end(body)
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.send-data.css" id="apidoc.element.send-data.css">
+        function <span class="apidocSignatureSpan">send-data.</span>css
+        <span class="apidocSignatureSpan">(req, res, opts, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function sendCss(req, res, opts, callback) {
+    if (typeof opts === 'string' || Buffer.isBuffer(opts)) {
+        opts = { body: opts }
+    } else {
+        opts = extend(opts);
+    }
+
+    opts.headers = extend(opts.headers, CONTENT_TYPE_HEADER);
+
+    send(req, res, opts, callback)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.send-data.error" id="apidoc.element.send-data.error">
+        function <span class="apidocSignatureSpan">send-data.</span>error
+        <span class="apidocSignatureSpan">(req, res, opts, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function sendError(req, res, opts, callback) {
+    assert(opts &amp;&amp; opts.body, 'opts.body is required');
+
+    var err = opts.body;
+    var logger = opts.logger;
+    var statsd = opts.statsd;
+    var verbose = opts.verbose;
+
+    var errOpts = {
+        verbose: typeof verbose === 'boolean' ? verbose : true,
+        serializeStack: opts.serializeStack,
+        bodyStatusCode: opts.bodyStatusCode,
+        additionalParams: opts.additionalParams,
+        err: err
+    };
+
+    var statsPrefix = opts.statsPrefix || 'clients.send-data';
+    var parsedUrl = url.parse(req.url);
+    var statsdKey = statsPrefix + '.error-handler';
+
+    var isExpected = err.expected ||
+        (err.statusCode &gt;= 400 &amp;&amp; err.statusCode &lt;= 499);
+
+    if (!isExpected) {
+        if (logger) {
+            logger.error('unexpected error', err);
+        }
+        if (statsd) {
+            statsd.increment(statsdKey + '.unexpected');
+        }
+    } else if (statsd) {
+        statsd.increment(statsdKey + '.expected');
+    }
+    writeError(req, res, errOpts, callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var statsdKey = statsPrefix + '.error-handler';
+
+var isExpected = err.expected ||
+    (err.statusCode &gt;= 400 &amp;&amp; err.statusCode &lt;= 499);
+
+if (!isExpected) {
+    if (logger) {
+        logger.<span class="apidocCodeKeywordSpan">error</span>('unexpected error', err);
+    }
+    if (statsd) {
+        statsd.increment(statsdKey + '.unexpected');
+    }
+} else if (statsd) {
+    statsd.increment(statsdKey + '.expected');
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.send-data.html" id="apidoc.element.send-data.html">
+        function <span class="apidocSignatureSpan">send-data.</span>html
+        <span class="apidocSignatureSpan">(req, res, opts, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function sendHtml(req, res, opts, callback) {
+    if (typeof opts === 'string' || Buffer.isBuffer(opts)) {
+        opts = { body: opts }
+    } else {
+        opts = extend(opts);
+    }
+
+    opts.headers = extend(opts.headers, CONTENT_TYPE_HEADER);
+
+    send(req, res, opts, callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.send-data.is_send_object" id="apidoc.element.send-data.is_send_object">
+        function <span class="apidocSignatureSpan">send-data.</span>is_send_object
+        <span class="apidocSignatureSpan">(object)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isSendObject(object) {
+    return object &amp;&amp;
+        (typeof object.statusCode === 'number' ||
+        (typeof object.headers === 'object' &amp;&amp; object.headers !== null));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.send-data.javascript" id="apidoc.element.send-data.javascript">
+        function <span class="apidocSignatureSpan">send-data.</span>javascript
+        <span class="apidocSignatureSpan">(req, res, opts, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function sendJavascript(req, res, opts, callback) {
+    if (typeof opts === "string" || Buffer.isBuffer(opts)) {
+        opts = { body: opts }
+    } else {
+        opts = extend(opts);
+    }
+
+    opts.headers = extend(opts.headers, CONTENT_TYPE_HEADER);
+
+    send(req, res, opts, callback)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.send-data.json" id="apidoc.element.send-data.json">
+        function <span class="apidocSignatureSpan">send-data.</span>json
+        <span class="apidocSignatureSpan">(req, res, opts, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function sendJson(req, res, opts, callback) {
+    if (!isSendObject(opts)) {
+        opts = { body: opts }
+    } else {
+        opts = extend(opts);
+    }
+
+    if (opts.pretty) {
+        opts.space = '    '
+    }
+
+    var tuple = safeStringify(opts.body,
+        opts.replacer || null, opts.space || '');
+
+    if (tuple[0]) {
+        return callback(tuple[0]);
+    }
+
+    opts.headers = extend(opts.headers, CONTENT_TYPE_HEADER);
+    opts.body = tuple[1];
+
+    send(req, res, opts, callback)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.send-data.plain" id="apidoc.element.send-data.plain">
+        function <span class="apidocSignatureSpan">send-data.</span>plain
+        <span class="apidocSignatureSpan">(req, res, opts, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function sendPlain(req, res, opts, callback) {
+    if (typeof opts === 'string' || Buffer.isBuffer(opts)) {
+        opts = { body: opts }
+    } else {
+        opts = extend(opts);
+    }
+
+    opts.headers = extend(opts.headers, CONTENT_TYPE_HEADER);
+
+    send(req, res, opts, callback)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.send-data.toString" id="apidoc.element.send-data.toString">
+        function <span class="apidocSignatureSpan">send-data.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function () {
+    return text;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.send-data.css" id="apidoc.module.send-data.css">module send-data.css</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.send-data.css.css" id="apidoc.element.send-data.css.css">
+        function <span class="apidocSignatureSpan">send-data.</span>css
+        <span class="apidocSignatureSpan">(req, res, opts, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function sendCss(req, res, opts, callback) {
+    if (typeof opts === 'string' || Buffer.isBuffer(opts)) {
+        opts = { body: opts }
+    } else {
+        opts = extend(opts);
+    }
+
+    opts.headers = extend(opts.headers, CONTENT_TYPE_HEADER);
+
+    send(req, res, opts, callback)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.send-data.error" id="apidoc.module.send-data.error">module send-data.error</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.send-data.error.error" id="apidoc.element.send-data.error.error">
+        function <span class="apidocSignatureSpan">send-data.</span>error
+        <span class="apidocSignatureSpan">(req, res, opts, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function sendError(req, res, opts, callback) {
+    assert(opts &amp;&amp; opts.body, 'opts.body is required');
+
+    var err = opts.body;
+    var logger = opts.logger;
+    var statsd = opts.statsd;
+    var verbose = opts.verbose;
+
+    var errOpts = {
+        verbose: typeof verbose === 'boolean' ? verbose : true,
+        serializeStack: opts.serializeStack,
+        bodyStatusCode: opts.bodyStatusCode,
+        additionalParams: opts.additionalParams,
+        err: err
+    };
+
+    var statsPrefix = opts.statsPrefix || 'clients.send-data';
+    var parsedUrl = url.parse(req.url);
+    var statsdKey = statsPrefix + '.error-handler';
+
+    var isExpected = err.expected ||
+        (err.statusCode &gt;= 400 &amp;&amp; err.statusCode &lt;= 499);
+
+    if (!isExpected) {
+        if (logger) {
+            logger.error('unexpected error', err);
+        }
+        if (statsd) {
+            statsd.increment(statsdKey + '.unexpected');
+        }
+    } else if (statsd) {
+        statsd.increment(statsdKey + '.expected');
+    }
+    writeError(req, res, errOpts, callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var statsdKey = statsPrefix + '.error-handler';
+
+var isExpected = err.expected ||
+    (err.statusCode &gt;= 400 &amp;&amp; err.statusCode &lt;= 499);
+
+if (!isExpected) {
+    if (logger) {
+        logger.<span class="apidocCodeKeywordSpan">error</span>('unexpected error', err);
+    }
+    if (statsd) {
+        statsd.increment(statsdKey + '.unexpected');
+    }
+} else if (statsd) {
+    statsd.increment(statsdKey + '.expected');
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.send-data.html" id="apidoc.module.send-data.html">module send-data.html</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.send-data.html.html" id="apidoc.element.send-data.html.html">
+        function <span class="apidocSignatureSpan">send-data.</span>html
+        <span class="apidocSignatureSpan">(req, res, opts, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function sendHtml(req, res, opts, callback) {
+    if (typeof opts === 'string' || Buffer.isBuffer(opts)) {
+        opts = { body: opts }
+    } else {
+        opts = extend(opts);
+    }
+
+    opts.headers = extend(opts.headers, CONTENT_TYPE_HEADER);
+
+    send(req, res, opts, callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.send-data.is_send_object" id="apidoc.module.send-data.is_send_object">module send-data.is_send_object</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.send-data.is_send_object.is_send_object" id="apidoc.element.send-data.is_send_object.is_send_object">
+        function <span class="apidocSignatureSpan">send-data.</span>is_send_object
+        <span class="apidocSignatureSpan">(object)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isSendObject(object) {
+    return object &amp;&amp;
+        (typeof object.statusCode === 'number' ||
+        (typeof object.headers === 'object' &amp;&amp; object.headers !== null));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.send-data.javascript" id="apidoc.module.send-data.javascript">module send-data.javascript</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.send-data.javascript.javascript" id="apidoc.element.send-data.javascript.javascript">
+        function <span class="apidocSignatureSpan">send-data.</span>javascript
+        <span class="apidocSignatureSpan">(req, res, opts, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function sendJavascript(req, res, opts, callback) {
+    if (typeof opts === "string" || Buffer.isBuffer(opts)) {
+        opts = { body: opts }
+    } else {
+        opts = extend(opts);
+    }
+
+    opts.headers = extend(opts.headers, CONTENT_TYPE_HEADER);
+
+    send(req, res, opts, callback)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.send-data.json" id="apidoc.module.send-data.json">module send-data.json</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.send-data.json.json" id="apidoc.element.send-data.json.json">
+        function <span class="apidocSignatureSpan">send-data.</span>json
+        <span class="apidocSignatureSpan">(req, res, opts, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function sendJson(req, res, opts, callback) {
+    if (!isSendObject(opts)) {
+        opts = { body: opts }
+    } else {
+        opts = extend(opts);
+    }
+
+    if (opts.pretty) {
+        opts.space = '    '
+    }
+
+    var tuple = safeStringify(opts.body,
+        opts.replacer || null, opts.space || '');
+
+    if (tuple[0]) {
+        return callback(tuple[0]);
+    }
+
+    opts.headers = extend(opts.headers, CONTENT_TYPE_HEADER);
+    opts.body = tuple[1];
+
+    send(req, res, opts, callback)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.send-data.plain" id="apidoc.module.send-data.plain">module send-data.plain</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.send-data.plain.plain" id="apidoc.element.send-data.plain.plain">
+        function <span class="apidocSignatureSpan">send-data.</span>plain
+        <span class="apidocSignatureSpan">(req, res, opts, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function sendPlain(req, res, opts, callback) {
+    if (typeof opts === 'string' || Buffer.isBuffer(opts)) {
+        opts = { body: opts }
+    } else {
+        opts = extend(opts);
+    }
+
+    opts.headers = extend(opts.headers, CONTENT_TYPE_HEADER);
+
+    send(req, res, opts, callback)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.send-data.toString" id="apidoc.module.send-data.toString">module send-data.toString</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.send-data.toString.toString" id="apidoc.element.send-data.toString.toString">
+        function <span class="apidocSignatureSpan">send-data.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
