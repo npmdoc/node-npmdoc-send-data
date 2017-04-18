@@ -1,4 +1,7 @@
-# api documentation for  [send-data (v8.0.0)](https://github.com/Raynos/send-data)  [![npm package](https://img.shields.io/npm/v/npmdoc-send-data.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-send-data) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-send-data.svg)](https://travis-ci.org/npmdoc/node-npmdoc-send-data)
+# npmdoc-send-data
+
+#### api documentation for  [send-data (v8.0.0)](https://github.com/Raynos/send-data)  [![npm package](https://img.shields.io/npm/v/npmdoc-send-data.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-send-data) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-send-data.svg)](https://travis-ci.org/npmdoc/node-npmdoc-send-data)
+
 #### send data through response
 
 [![NPM](https://nodei.co/npm/send-data.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/send-data)
