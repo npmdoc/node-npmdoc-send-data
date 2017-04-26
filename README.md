@@ -1,6 +1,6 @@
 # npmdoc-send-data
 
-#### api documentation for  [send-data (v8.0.0)](https://github.com/Raynos/send-data)  [![npm package](https://img.shields.io/npm/v/npmdoc-send-data.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-send-data) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-send-data.svg)](https://travis-ci.org/npmdoc/node-npmdoc-send-data)
+#### basic api documentation for  [send-data (v8.0.0)](https://github.com/Raynos/send-data)  [![npm package](https://img.shields.io/npm/v/npmdoc-send-data.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-send-data) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-send-data.svg)](https://travis-ci.org/npmdoc/node-npmdoc-send-data)
 
 #### send data through response
 
@@ -80,7 +80,8 @@
         "test": "node ./test/index.js",
         "view-cover": "opn coverage/index.html"
     },
-    "version": "8.0.0"
+    "version": "8.0.0",
+    "bin": {}
 }
 ```
 
